@@ -1,1 +1,6 @@
 {"projectName":"trae_nestware_res_vp1i"}
+{
+  "build": {
+    "outputDirectory": "build"
+  }
+}
