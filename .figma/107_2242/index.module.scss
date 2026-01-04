@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.frame2147223255 {
+  position: relative;
+  border-radius: 150px 0px 0px;
+  background: #5a47fb;
+  width: 1440px;
+  height: 437px;
+  overflow: hidden;
+
+  .frame14 {
+    display: flex;
+    position: absolute;
+    top: 155px;
+    left: 664px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 487px;
+    height: 127px;
+    row-gap: 3px;
+
+    .whetherYouReBuilding {
+      flex-shrink: 0;
+      align-self: stretch;
+      width: 487px;
+      height: 84px;
+      line-height: 22px;
+      letter-spacing: 0;
+      color: #ffffff;
+      font-family: "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    .frame7 {
+      display: inline-flex;
+      flex-shrink: 0;
+      align-items: center;
+      align-self: stretch;
+      column-gap: 8px;
+      margin-right: 183px;
+
+      .rectangle2 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        background: #000000;
+        padding: 9px 14px 9px 15px;
+
+        .exploreServices {
+          line-height: 22px;
+          letter-spacing: 0;
+          color: #ffffff;
+          font-family: "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+      }
+
+      .rectangle3 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        border: 1px solid #000000;
+        padding: 8px 28px;
+
+        .getInTouch {
+          line-height: 22px;
+          letter-spacing: 0;
+          color: #000000;
+          font-family: "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .startup2StreamlineBr {
+    position: absolute;
+    top: 0;
+    left: 271px;
+    width: 413px;
+    height: 413px;
+    overflow: hidden;
+    rotate: -180deg;
+  }
+}

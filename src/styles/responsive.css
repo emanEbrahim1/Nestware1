@@ -1,0 +1,581 @@
+/* ===== NESTWARE RESPONSIVE STYLES ===== */
+/* Conservative approach: Preserve original desktop layout, adapt only for smaller screens */
+
+/* ===== BASE STYLES ===== */
+/* Prevent horizontal scroll on all devices */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide mobile menu toggle by default */
+.mobile-menu-toggle {
+  display: none;
+}
+
+/* Mobile menu overlay */
+.mobile-menu-overlay {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-menu-overlay {
+    display: block;
+  }
+}
+
+/* ===== DESKTOP & LAPTOP (1024px+) ===== */
+/* Keep original design intact - NO CHANGES */
+@media (min-width: 1024px) {
+  /* Original design works perfectly - no modifications needed */
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+}
+
+/* ===== TABLET (768px - 1023px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Scale the entire page proportionally */
+  [data-name="Home"] {
+    transform: scale(0.75);
+    transform-origin: top center;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  nav {
+    transform: scale(0.75);
+    transform-origin: top center;
+    width: 1440px;
+  }
+}
+
+/* ===== MOBILE (320px - 767px) ===== */
+@media (max-width: 767px) {
+  /* Mobile navigation with hamburger menu */
+  .mobile-menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    right: 20px;
+    top: 25px;
+    width: 28px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+  }
+
+  .mobile-menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #1a1a1a;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+
+  .mobile-menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .mobile-menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* Mobile Navigation */
+  nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw !important;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transform: none !important;
+  }
+
+  nav > div {
+    width: 100% !important;
+    height: 70px !important;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Logo */
+  nav > div > div:first-child {
+    position: static !important;
+    width: 24px !important;
+    height: 28px !important;
+    left: auto !important;
+    top: auto !important;
+  }
+
+  /* Navigation menu - mobile slide-in */
+  nav [data-name="Container"] {
+    position: fixed !important;
+    top: 70px;
+    left: -100%;
+    width: 100vw !important;
+    height: calc(100vh - 70px);
+    background: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+    padding: 0 !important;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  }
+
+  nav [data-name="Container"].mobile-menu-open {
+    left: 0 !important;
+  }
+
+  nav [data-name="Container"] > div {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+    padding: 30px 20px !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    left: auto !important;
+    top: auto !important;
+  }
+
+  nav [data-name="Container"] p {
+    font-size: 18px !important;
+    padding: 16px 0 !important;
+    border-bottom: 1px solid #f0f0f0;
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  /* Get in Touch button in nav */
+  nav > div > div:last-child {
+    position: static !important;
+    right: auto !important;
+    top: auto !important;
+  }
+
+  nav > div > div:last-child svg {
+    width: 90px !important;
+    height: 32px !important;
+  }
+
+  nav > div > div:last-child p {
+    font-size: 13px !important;
+  }
+
+  /* Main content wrapper */
+  [data-name="Home"] {
+    width: 100vw !important;
+    min-height: auto !important;
+    height: auto !important;
+    position: relative !important;
+    overflow-x: hidden;
+    padding-top: 70px;
+  }
+
+  /* All absolute positioned sections become relative/static flow */
+  [data-name="Home"] > div,
+  [data-name="Home"] > .absolute {
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    height: auto !important;
+  }
+
+  /* Hero Section */
+  #hero {
+    min-height: auto !important;
+    padding: 40px 20px !important;
+    margin-top: 0 !important;
+  }
+
+  #hero > div {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  #hero .absolute {
+    position: relative !important;
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Nestware logo letters container */
+  #hero .h-\[143px\] {
+    height: 100px !important;
+    width: 100% !important;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #hero .h-\[143px\] > div {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #hero .h-\[143px\] svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hero text content */
+  #hero .w-\[723px\] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #hero .text-\[48px\] {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+    white-space: normal !important;
+  }
+
+  #hero .text-\[18px\] {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    height: auto !important;
+  }
+
+  /* Hero buttons */
+  #hero .flex.gap-\[8px\] {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  #hero .inline-grid {
+    width: 100% !important;
+    max-width: 200px !important;
+  }
+
+  #hero .inline-grid > div {
+    width: 100% !important;
+  }
+
+  /* Hide decorative illustrations on mobile */
+  #hero .illustration-animate:not(.h-\[143px\] .illustration-animate) {
+    display: none;
+  }
+
+  /* About/Vision section (purple) */
+  .bg-\[#5a47fb\].rounded-tl-\[150px\] {
+    border-radius: 40px 40px 0 0 !important;
+    padding: 50px 20px !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .bg-\[#5a47fb\] > div {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+  }
+
+  .bg-\[#5a47fb\] .illustration-animate {
+    display: none;
+  }
+
+  /* Services Section */
+  #services {
+    padding: 50px 20px !important;
+    overflow: hidden !important;
+  }
+
+  #services > p {
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+    font-size: 36px !important;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .services-scroll-container {
+    position: relative !important;
+    top: auto !important;
+    left: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .services-scroll-track {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 50px !important;
+    animation: none !important;
+    width: 100% !important;
+  }
+
+  .services-scroll-track > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .services-scroll-track .size-\[250px\] {
+    width: 180px !important;
+    height: 180px !important;
+    margin: 0 auto;
+  }
+
+  .services-scroll-track .text-\[24px\] {
+    font-size: 20px !important;
+    text-align: center;
+  }
+
+  .services-scroll-track .text-\[16px\] {
+    font-size: 15px !important;
+    text-align: center;
+  }
+
+  /* Process Section */
+  #process {
+    padding: 50px 20px !important;
+  }
+
+  #process + div,
+  #process ~ div {
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+
+  #process ~ div .text-\[48px\] {
+    font-size: 32px !important;
+    white-space: normal !important;
+    text-align: center;
+  }
+
+  #process ~ div .text-\[18px\] {
+    font-size: 16px !important;
+    text-align: center;
+  }
+
+  #process ~ div .w-\[723px\],
+  #process ~ div .w-\[569px\] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Process cards */
+  #process ~ div .absolute.bg-white {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: 30px auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+  }
+
+  #process ~ div [data-name="Background+Border+Shadow"] {
+    position: relative !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: auto !important;
+    margin: 20px 0 !important;
+  }
+
+  #process ~ div .illustration-animate {
+    display: none;
+  }
+
+  /* Testimonials Section */
+  #testimonials {
+    padding: 50px 20px 100px !important;
+    height: auto !important;
+  }
+
+  #testimonials > p {
+    position: relative !important;
+    left: 0 !important;
+    font-size: 32px !important;
+    text-align: center;
+    margin-bottom: 40px;
+    white-space: normal !important;
+  }
+
+  #testimonials .illustration-animate {
+    display: none;
+  }
+
+  .testimonial-carousel-wrapper {
+    padding: 0 50px !important;
+    position: relative;
+  }
+
+  .carousel-track-container {
+    max-width: 100% !important;
+  }
+
+  .carousel-slide > div {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto;
+  }
+
+  .carousel-arrow {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .carousel-arrow-left {
+    left: 0 !important;
+  }
+
+  .carousel-arrow-right {
+    right: 0 !important;
+  }
+
+  /* CTA Section */
+  .bg-\[#ededed\].rounded-tl-\[150px\] {
+    border-radius: 40px 40px 0 0 !important;
+    padding: 50px 20px !important;
+    height: auto !important;
+  }
+
+  .bg-\[#ededed\] > p {
+    position: relative !important;
+    left: 0 !important;
+    font-size: 28px !important;
+    text-align: center;
+    white-space: normal !important;
+    margin-bottom: 30px;
+  }
+
+  .bg-\[#ededed\] > div {
+    position: relative !important;
+    left: 0 !important;
+    top: auto !important;
+    transform: none !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  /* Footer */
+  [data-name="Footer"] {
+    padding: 40px 20px !important;
+    height: auto !important;
+  }
+
+  [data-name="Footer"] > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+    height: auto !important;
+  }
+
+  [data-name="Footer"] > div:first-child > div {
+    width: 100% !important;
+  }
+
+  [data-name="Footer"] > div:last-child {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  [data-name="Footer"] .illustration-animate {
+    transform: scale(0.7);
+  }
+
+  /* Hide complex positioned elements on mobile */
+  .absolute.contents {
+    display: none !important;
+  }
+
+  /* Ensure text is readable */
+  p, span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Button adjustments */
+  .inline-grid p {
+    font-size: 14px !important;
+  }
+}
+
+/* ===== SMALL MOBILE (320px - 480px) ===== */
+@media (max-width: 480px) {
+  #hero .text-\[48px\] {
+    font-size: 28px !important;
+  }
+
+  #testimonials > p {
+    font-size: 28px !important;
+  }
+
+  .testimonial-carousel-wrapper {
+    padding: 0 30px !important;
+  }
+
+  .carousel-arrow {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  [data-name="Footer"] .illustration-animate {
+    transform: scale(0.6);
+  }
+}
+
+/* ===== PREVENT LAYOUT BREAKS ===== */
+/* Ensure smooth transitions but not on layout-critical properties */
+.illustration-animate,
+[class*="animate"],
+.carousel-slide {
+  transition: none !important;
+}
+
+/* Keep illustrations animating */
+.illustration-animate {
+  animation: moveLeftRight 3s ease-in-out infinite;
+}
+
+/* Ensure proper stacking context */
+nav {
+  z-index: 1000;
+}
+
+.mobile-menu-toggle {
+  z-index: 1001;
+}
+

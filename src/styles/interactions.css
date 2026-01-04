@@ -1,0 +1,30 @@
+/* ===== TEXT HOVER EFFECTS ===== */
+
+/* General text hover effect - subtle scale and color shift */
+h1, h2, h3, h4, h5, h6, p, span, div[data-name*="Text"], [data-name*="Helper"] {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+/* Only apply hover effects on desktop (1024px+) */
+@media (min-width: 1024px) {
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    transform: scale(1.02);
+    color: #5A47FB;
+  }
+
+  p:hover, span:hover, div[data-name*="Text"]:hover, [data-name*="Helper"]:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+  }
+
+  /* Testimonial text hover */
+  [data-name="HelperText"]:hover {
+    transform: scale(1.005);
+  }
+}
+
+/* Button text hover (enhance existing button hover) */
+button:hover, a:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.frame47 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 100px 100px 0px 0px;
+  background: #5a47fb;
+  padding: 89px 205px 67px 151px;
+  width: 1440px;
+  height: 649px;
+  overflow: hidden;
+
+  .buildingTomorrowToge {
+    margin: 0px 0px 0px 226px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #e5e5e5;
+    font-family: Arvo, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 48px;
+  }
+
+  .autoWrapper2 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 73px;
+    padding-right: 0;
+    padding-left: 0;
+
+    .autoWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+      margin-top: 46px;
+
+      .toBeTheGoToTechnolog {
+        flex-shrink: 0;
+        align-self: stretch;
+        width: 507px;
+        height: 83px;
+        line-height: 30px;
+        letter-spacing: 0;
+        color: #e5e5e5;
+        font-family: "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+      }
+
+      .ourVision {
+        flex-shrink: 0;
+        align-self: stretch;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #212121;
+        font-family: Arvo, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 32px;
+      }
+
+      .frame50 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        row-gap: 23px;
+      }
+
+      .frame49 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        margin-top: 71px;
+        row-gap: 23px;
+      }
+    }
+
+    .vector8 {
+      margin-top: 8px;
+      margin-left: 99px;
+      width: 1px;
+      height: 321px;
+    }
+
+    .strategy1StreamlineB {
+      margin-left: 78px;
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+    }
+  }
+}

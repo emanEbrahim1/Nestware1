@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+.group2 {
+  display: flex;
+  align-items: flex-start;
+  width: 1156px;
+  height: 36px;
+
+  .frame2 {
+    width: 28px;
+    height: 30px;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 44px;
+    padding-top: 4px;
+    padding-right: 1px;
+    width: 1084px;
+    min-width: 1084px;
+
+    .frame4 {
+      display: inline-flex;
+      align-items: center;
+      column-gap: 21px;
+      margin-top: 2px;
+
+      .about {
+        flex-shrink: 0;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #1a1a1a;
+        font-family: "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+
+    .frame5 {
+      display: flex;
+      align-items: flex-start;
+      width: 98px;
+      height: 32px;
+
+      .rectangle1 {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        margin-top: -4px;
+        margin-left: -10px;
+        border-radius: 0px 0px 0px 23px;
+        background: #1a1a1a;
+        padding: 7px 10px 7px 11px;
+
+        .getInTouch {
+          width: 87px;
+          height: 23px;
+          text-align: center;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #ffffff;
+          font-family: Arimo, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

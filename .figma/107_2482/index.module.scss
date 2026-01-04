@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+.frame2147223262 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 918px;
+  height: 547px;
+
+  .autoWrapper {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    padding-right: 248px;
+    padding-left: 0;
+
+    .group32 {
+      margin-top: 27px;
+      width: 115px;
+      height: 116px;
+      rotate: -180deg;
+    }
+
+    .aboutNestware {
+      width: 419px;
+      height: 32px;
+      text-align: center;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #1b1b1b;
+      font-family: Arvo, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 48px;
+    }
+  }
+
+  .autoWrapper3 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 4px;
+    padding-right: 0;
+    padding-left: 51px;
+
+    .ourApproachToGrowth {
+      flex-shrink: 0;
+      align-self: stretch;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #1b1b1b;
+      font-family: "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    .frame2147223256 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 17px;
+
+      .atNestwareWeBelieveG {
+        flex-shrink: 0;
+        width: 394px;
+        height: 120px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #1a1a1a;
+        font-family: "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+
+    .autoWrapper2 {
+      position: relative;
+      margin-top: 4px;
+      width: 429px;
+      height: 101px;
+
+      .frame13 {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 429px;
+        height: 101px;
+        row-gap: 17px;
+
+        .ourTeamBringsTogethe {
+          flex-shrink: 0;
+          width: 388px;
+          height: 64px;
+          line-height: 24px;
+          letter-spacing: 0;
+          color: #1a1a1a;
+          font-family: "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+      }
+
+      .group20 {
+        position: absolute;
+        top: -112px;
+        left: 311px;
+        width: 99px;
+        height: 102px;
+        rotate: 14deg;
+      }
+    }
+  }
+
+  .autoWrapper4 {
+    position: relative;
+    margin-top: 19px;
+    margin-left: 345px;
+    width: 224px;
+    height: 224px;
+
+    .vector8 {
+      position: absolute;
+      top: -220px;
+      left: 115px;
+      width: 1px;
+      height: 302px;
+    }
+
+    .teamCoding2Streamlin {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 224px;
+      height: 224px;
+      overflow: hidden;
+    }
+  }
+}
